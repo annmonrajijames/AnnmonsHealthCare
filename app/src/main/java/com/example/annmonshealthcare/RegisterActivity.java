@@ -3,10 +3,12 @@ package com.example.annmonshealthcare;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
-EditText edUsername, Edemail, edPassword, edConfirm;
+EditText edUsername, edemail, edPassword, edConfirm;
 Button btn;
 TextView tv;
 
@@ -15,9 +17,11 @@ TextView tv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        edUsername = findViewById(R.id.editTextLoginUsername);
-        edPassword = findViewById(R.id.editTextLoginPassword);
-        btn = findViewById(R.id.buttonLogin);
-        tv = findViewById(R.id.textViewNewUser);
+        edUsername = findViewById(R.id.editTextRegUsername);
+        edemail = findViewById(R.id.editTextRegemailid);
+        edPassword = findViewById(R.id.editTextRegPassword);
+        edConfirm = findViewById(R.id.editTextRegConfirmPassword);
+        btn = findViewById(R.id.buttonReg);
+        tv = findViewById(R.id.textViewAlreadyaccount);
     }
 }
