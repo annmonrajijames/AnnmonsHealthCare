@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Purples -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EA</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="purpleDark">#3200A0</color>
+
+    <!-- Teals -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Basic Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Custom Colors -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Adjust value as needed -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#FF0000</color> <!-- Adjust value as needed -->
+    <color name="yellowLight">#FFFF00</color> <!-- Adjust value as needed -->
 </resources>
