@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
 EditText edUsername, edemail, edPassword, edConfirm;
@@ -39,7 +40,17 @@ TextView tv;
             String email=edemail.getText().toString();
             String password=edPassword.getText().toString();
             String confirm=edConfirm.getText().toString();
+            if(username.length()==0 || email.length()==0 || password.length()==0 || confirm.length()==0){
+                Toast.makeText(getApplicationContext(), "Please fill All details", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                if(password.compareTo(confirm)==0){
 
+                }else{
+                    Toast.makeText(getApplicationContext(), "Password and Confirm password didn't match", Toast.LENGTH_SHORT).show();
+
+                }
+            }
 
             }
         });
