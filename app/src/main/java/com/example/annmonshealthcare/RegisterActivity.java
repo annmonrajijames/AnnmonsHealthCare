@@ -35,6 +35,11 @@ TextView tv;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
                     public void onClick(View view) {
+            String username=edUsername.getText().toString();
+            String email=edemail.getText().toString();
+            String password=edPassword.getText().toString();
+            String confirm=edConfirm.getText().toString();
+
 
             }
         });
