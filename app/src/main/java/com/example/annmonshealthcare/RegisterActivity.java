@@ -46,6 +46,7 @@ TextView tv;
                 } else {
                     if (password.compareTo(confirm) == 0) {
                           if(isValid(password)) {
+                              db.register(username,email,password);
                               Toast.makeText(getApplicationContext(), "Record inserted", Toast.LENGTH_SHORT).show();
                               startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                           }
