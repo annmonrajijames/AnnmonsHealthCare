@@ -1,5 +1,6 @@
 package com.example.annmonshealthcare;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -21,5 +22,14 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+    public void register(String username, String email, String password){
+        ContentValues cv= new ContentValues();
+        cv.put("username",username);
+        cv.put("email",email);
+        cv.put("password", password);
+        SQLiteDatabase db=getWritableDatabase();
+        db.insert("users", null,cv);
+        db.close();
     }
 }
