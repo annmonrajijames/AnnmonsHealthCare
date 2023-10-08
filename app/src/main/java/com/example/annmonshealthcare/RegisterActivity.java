@@ -50,7 +50,6 @@ TextView tv;
                           }
                     } else {
                         Toast.makeText(getApplicationContext(), "Password and Confirm password didn't match", Toast.LENGTH_SHORT).show();
-
                     }
                 }
 
@@ -59,7 +58,7 @@ TextView tv;
     }
         public static boolean isValid(String passwordhere) {
             int f1=0, f2=0, f3=0;
-            if (passwordhere.length()<0) {
+            if (passwordhere.length()<8) {
                 return false;
             } else {
                 for (int p=0; p<passwordhere.length(); p++){
